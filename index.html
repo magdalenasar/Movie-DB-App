@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam 1 JS |Syntra</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script defer src="./js/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="movie-wrapper">
+        <div class="movie-search">
+          <div class="movie-search-box"></div>
+          <input
+            type="text"
+            clas="search-content"
+            placeholder="Search for a movie"
+            id="search-input"
+          />
+          <button type="submit" class="search-btn btn" id="search-btn">
+            Search
+          </button>
+          <div class="movie-result">
+            <h2 class="title">Movies matching</h2>
+            <div id="movie">
+              <!-- movie item-->
+              <div class="movie-item">
+                <div class="movie-img">
+                  <img src="movie.jpg" alt="movie img" />
+                </div>
+                <div class="about-the-movie">
+                  <h2 id="title">Titanic</h2>
+                </div>
+              </div>
+              <!-- end of movie item-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
