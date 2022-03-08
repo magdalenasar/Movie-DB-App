@@ -10,4 +10,4 @@ surge.sh ← On
 
 - link to the project:
 
-# magdalena-sarandeva_JS-examen1.surge.sh
+# www.magdalena-sarandeva_JS-examen1.surge.sh
