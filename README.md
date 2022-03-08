@@ -5,8 +5,8 @@ This is a Vanilla Java Script project, styled with SASS.
 #Database
 using -> https://www.themoviedb.org/;
 
-#Deployment
-surge.sh ← On
+#Deployment on:
+surge.sh ← 
 
 - link to the project:
 
