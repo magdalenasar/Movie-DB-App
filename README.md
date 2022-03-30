@@ -2,11 +2,9 @@
 
 This is a Vanilla Java Script project, styled with SASS.
 
-#Database
-using -> https://www.themoviedb.org/;
+- Used Database -> https://www.themoviedb.org/
 
-#Deployment on:
-surge.sh ← 
+- Deployed on: surge.sh ← 
 
 - link to the project:
 
