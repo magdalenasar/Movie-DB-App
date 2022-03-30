@@ -1,4 +1,4 @@
-# movieDB-JS_examen
+# Movie DB App: JS examen
 
 This is a Vanilla Java Script project, styled with SASS.
 
