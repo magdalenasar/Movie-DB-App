@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>JS Examen |Syntra</title>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCN7X6hWPlBTzEjMAIQQzsrqhVLHsbP36w",
+        authDomain: "movie-app-350ce.firebaseapp.com",
+        projectId: "movie-app-350ce",
+        storageBucket: "movie-app-350ce.appspot.com",
+        messagingSenderId: "1077198273320",
+        appId: "1:1077198273320:web:1fb89a6db9b1e99a27ae1d",
+        measurementId: "G-ZQTG3X00FJ",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="https://www.themoviedb.org/">Movies </a>
+      <h4>
+        “CINEMA IS A MATTER OF WHAT’S IN THE FRAME AND WHAT’S OUT.” - Martin
+        Scorsese
+      </h4>
+    </header>
+    <section>
+      <form id="form">
+        <input
+          type="text"
+          placeholder="Search for a film"
+          id="search"
+          class="search"
+        />
+        <button type="submit" class="form__btn" id="search-btn">Search</button>
+      </form>
+      <div>
+        <h2 class="movie-info">Trending Movies</h2>
+      </div>
+    </section>
+    <main id="main"></main>
+    <div class="pagination">
+      <div class="page" id="prev">Previous Page</div>
+      <div class="current" id="current">1</div>
+      <div class="page" id="next">Next Page</div>
+    </div>
+  </body>
+</html>
