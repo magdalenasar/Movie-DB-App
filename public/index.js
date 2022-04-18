@@ -60,4 +60,4 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-console.log(firebase);
+// console.log(firebase);
