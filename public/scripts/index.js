@@ -72,6 +72,7 @@ main.onclick = function (e) {
     } else {
       // addthe class
       e.target.classList.add("is-favorite");
+      e.target.textContent = "-";
     }
   }
 };
