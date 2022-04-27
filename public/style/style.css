@@ -137,6 +137,10 @@ main .movie .favorite-btn:hover {
 main .movie .favorite-btn:active {
   transform: translateY(-1px);
 }
+main .movie .is-favorite {
+  background-color: green !important;
+  color: white;
+}
 main .movie img {
   width: 100%;
 }

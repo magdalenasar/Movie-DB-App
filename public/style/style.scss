@@ -161,9 +161,15 @@ main {
       }
       
     }  
-      img {
-        width: 100%;
-      }
+
+    .is-favorite {
+      background-color: green!important; 
+      color:white;
+    }
+
+    img {
+      width: 100%;
+    }
       
     .movie-info {
       display: flex;

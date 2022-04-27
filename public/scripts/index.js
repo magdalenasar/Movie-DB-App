@@ -36,13 +36,6 @@ function showMovies(data) {
       </div>`;
     main.appendChild(movieEl);
   });
-
-  // bind click handler to element that is added later/dynamically
-  main.onclick = function (e) {
-    if (e.target.classList.contains("favorite-btn")) {
-      alert("Yes! ! Delegated Event Listener triggered");
-    }
-  };
 }
 
 form.addEventListener("submit", (e) => {
@@ -68,3 +61,17 @@ function getColor(vote) {
   }
 }
 // console.log(firebase);
+
+// TODO: When favorite button is clicked
+// bind click handler to element that is added later/dynamically
+main.onclick = function (e) {
+  if (e.target.classList.contains("favorite-btn")) {
+    if (e.target.classList.contains("is-favorite")) {
+      // remove the class
+      e.target.classList.remove("is-favorite");
+    } else {
+      // addthe class
+      e.target.classList.add("is-favorite");
+    }
+  }
+};
