@@ -24,39 +24,35 @@ body header {
   margin-bottom: 2%;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
 }
-body header a {
+body header .logo {
   font-weight: 700;
   font-size: 32px;
   color: var(--highlight-color);
 }
-body header a:hover {
+body header .logo:hover {
   color: #b78874;
 }
-body header a:active {
+body header .logo:active {
   transform: translate(0.8px, 0.8px);
 }
 
-section {
-  padding-left: 6%;
-}
-section .form__btn {
+.form__btn {
   border-radius: 3px;
   cursor: pointer;
-  font-size: 16px;
-  margin: 10px;
-  padding: 10px 30px;
+  font-size: 15px;
+  padding: 5px 5px;
   transition: background-color 220ms, transform 220ms;
-  border: none;
+  border: 2px solid var(--highlight-color);
   color: var(--primary-color);
   background-color: var(--highlight-color);
   box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.07), 0px -3px 7px 1px rgba(0, 0, 0, 0.07);
 }
-section .form__btn:hover {
+.form__btn:hover {
   text-decoration: none;
   color: #b78874;
   opacity: 0.7;
 }
-section .form__btn:active {
+.form__btn:active {
   transform: translate(0.8px, 0.8px);
 }
 
@@ -184,12 +180,10 @@ main .movie .movie-info span.red {
 .btn {
   border: none;
   color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16pt;
+  font-size: 16px;
   border-radius: 3px;
   box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
-  padding: 18px 32px;
+  padding: 10px 20px;
 }
 .btn:hover {
   background-color: cornflowerblue;
@@ -200,6 +194,7 @@ main .movie .movie-info span.red {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 a:hover {
   opacity: 0.7;
@@ -211,13 +206,21 @@ a:active {
 @media screen and (max-width: 500px) {
   body {
     width: 350px;
-    margin: 0 auto;
+    margin: 0 auto !important;
   }
 
   header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  header .form {
+    padding-left: 6%;
+  }
+  header .form__btn {
+    display: none;
   }
 
   main {

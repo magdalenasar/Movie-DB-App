@@ -25,7 +25,7 @@ body {
     margin-bottom: 2%;
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
 
-    a {
+    .logo {
       font-weight: 700;
       font-size: 32px;
       color: var(--highlight-color);
@@ -43,17 +43,16 @@ body {
 
 
 
-section {
-  padding-left: 6%;
+.form {
 
-  .form__btn {
+
+  &__btn {
     border-radius: 3px;
     cursor: pointer;
-    font-size: 16px;
-    margin: 10px;
-    padding: 10px 30px;
+    font-size: 15px;
+    padding: 5px 5px;
     transition: background-color 220ms, transform 220ms;
-    border: none;
+    border: 2px solid var(--highlight-color);;
     color: var(--primary-color);
     background-color: var(--highlight-color);
     box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.07),
@@ -94,32 +93,32 @@ section {
 }
 
 
-    h1 {
-      animation: blink 20s infinite;
-    
-      @keyframes blink {
-        0% {
-          color: rgb(238, 235, 235);
-        }
-    
-        25% {
-         color: #ba8f72;
-        }
-    
-        50% {
-        color: grey;
-        }
-    
-        75% {
-        color: #7d604d;
-        }
-    
-        100% {
-          color: #b78874;
-        }
+  h1 {
+    animation: blink 20s infinite;
+  
+    @keyframes blink {
+      0% {
+        color: rgb(238, 235, 235);
       }
-    
+  
+      25% {
+        color: #ba8f72;
+      }
+  
+      50% {
+      color: grey;
+      }
+  
+      75% {
+      color: #7d604d;
+      }
+  
+      100% {
+        color: #b78874;
+      }
     }
+  
+  }
 
 main {
   display: flex;
@@ -219,12 +218,10 @@ main {
 .btn {
   border: none;
   color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16pt;
+  font-size: 16px;
   border-radius: 3px;
   box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
-  padding: 18px 32px;
+  padding: 10px 20px;
 
   &:hover {
     background-color: cornflowerblue;
@@ -237,6 +234,7 @@ main {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.7;
@@ -251,14 +249,26 @@ a {
 
 @media screen and (max-width: 500px) {
   body {
+
     width: 350px;
-    margin: 0 auto;
+    margin:0 auto !important;
   }
 
   header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+    .form {
+      padding-left: 6%;
+
+      &__btn {
+        display: none;
+      }
+    }
   }
 
   main {
@@ -271,7 +281,7 @@ a {
       img {
         width: 50%;
         border-radius: 5%;
-        
+
 
         &:hover {
           transform: scale(1.3);

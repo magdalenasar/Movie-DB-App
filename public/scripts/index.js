@@ -69,10 +69,38 @@ main.onclick = function (e) {
     if (e.target.classList.contains("is-favorite")) {
       // remove the class
       e.target.classList.remove("is-favorite");
+      e.target.textContent = "+";
     } else {
-      // addthe class
+      // add the class
       e.target.classList.add("is-favorite");
       e.target.textContent = "-";
+
+      // Get Info
+      // console.log(e.target.parentElement);
+      const movieBody = e.target.parentElement;
+
+      const movieInfo = {
+        id: e.target.dataset.id,
+        title: movieBody.querySelector("h3").textContent,
+        image: movieBody.querySelector("img").src,
+      };
+
+      // consolelog(movieInfo);
+
+      // Add to LS
+      saveToLS(movieInfo);
     }
   }
 };
+
+function dysplayData() {
+  const favListBtn = document.querySelector("#favListBtn");
+  const favorites = document.querySelector("#favorites");
+
+  //Get the favorite form storage and display them
+  const movies = getMoviesDataFromLS();
+}
+
+function showFavList() {
+  favorites.removeAttribute("hidden");
+}

@@ -17,17 +17,24 @@
     <script type="text/javascript" src="./scripts/index.js" defer></script>
     <script src="./scripts/connect.js" defer></script>
     <script src="./scripts/authenticationG.js" defer></script>
-    <script src="./scripts/favorites.js" defer></script>
+    <script src="./scripts/moviesLS.js" defer></script>
+    <script src="./scripts/modal.js" defer></script>
   </head>
   <body>
     <header>
-      <a href="https://www.themoviedb.org/">Movies </a>
-      <section>
+      <a class="logo" href="https://www.themoviedb.org/">Movies </a>
+      <div class="form">
         <form id="form">
-          <input type="text" placeholder="Search" id="search" class="search" />
+          <input
+            type="text"
+            placeholder="Search"
+            id="search"
+            class="search"
+            autofocus
+          />
           <button type="submit" class="form__btn" id="search-btn">🔎</button>
         </form>
-      </section>
+      </div>
       <!-- Authentification -->
       <div class="authentication">
         <section id="whenSignedOut">
@@ -36,11 +43,25 @@
 
         <section id="whenSignedIn" hidden="true">
           <div id="userDetails"></div>
+          <a id="favListBtn"><p>My Favorites List >></p></a>
           <button id="signOutBtn" class="btn">Sign Out</button>
         </section>
       </div>
     </header>
-
+    <section>
+      <div id="favorites" hidden>
+        <h2>My favorites</h2>
+        <table class="" id="favorites">
+          <thead>
+            <th>Image</th>
+            <th>Title</th>
+            <th>View</th>
+            <th>Remove</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
     <h1 style="text-align: center">Trending Now</h1>
 
     <main id="main"></main>
