@@ -93,7 +93,7 @@ main.onclick = function (e) {
   }
 };
 
-function dysplayData() {
+function displayData() {
   const favListBtn = document.querySelector("#favListBtn");
   const favorites = document.querySelector("#favorites");
 
